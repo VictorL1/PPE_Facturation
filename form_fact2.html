@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="form_fact.css"/>
+        <title>Maison des Ligue - Ajout facture</title>
+        <meta charset="utf-8">
+    <title>Formulaire Facture</title>
+</head>
+<body>
+    <div id="bande_horizontale">
+    <p>
+        <img src="Logo.jpg">
+    </p>
+
+<h1>Nouvelle Facture</h1>
+
+
+
+
+<style>
+table{border-collapse: collapse;border:1px solid black;}td{text-aligne:center;}
+
+</style>
+<h3>Saisissez ces informations : </h3>
+</br>
+<table>
+    <form method="POST" action="facture.php">
+    <tr>
+        <td>Num facture</td> 
+        <td><input type="text" name="nbf"></td> 
+    </tr>
+    <tr>
+        <td>Date de facturation</td>
+        <td><input type="text" name="df"></td>
+    </tr>
+    <tr>
+        <td>Echéance</td>
+        <td><input type="text" name="ec"></td>
+    </tr>
+    <tr>
+        <td>Compte ligue</td>
+        <td><input type="text" name="cl"></td>
+    </tr>
+        
+    </form>
+</table>
+</br></br></br>
+<style>
+table{border-collapse: collapse;border:1px solid black;}td{width:70px;height:30px;text-aligne:center;}
+</style>
+<table>
+    <thead>
+   <tr>
+       <th>Désignation</th>
+       <th>Qté</th>
+       <th>PU HT</th>
+       <th>Montant TTC</th>
+   </tr>
+    </thead>
+
+
+    <tfoot>
+    <tr>
+       <th>Total :</th>
+       <th></th>
+       <th></th>
+       <th></th>
+   </tr>
+    </tfoot>
+
+   <tr>
+       <td>Affranchissement</td>
+       <td><form method="POST" action="facture.php"><input type="text" name="afr"></form></td>
+       <td> <var>3,330</td>
+       <td></td>
+   </tr>
+   <tr>
+       <td>Photocopies couleur</td>
+       <td><form method="POST" action="facture.php"><input type="text" name="ph-c"></form></td>
+       <td>0,240</td>
+       <td></td>
+   </tr>
+   <tr>
+       <td>Photocopies Noir et Blanc</td>
+       <td><form method="POST" action="facture.php"><input type="text" name="ph-nb"></form></td>
+       <td>0,055</td>
+       <td></td>
+   </tr>
+   <tr>
+       <td>Traceur</td>
+       <td><form method="POST" action="facture.php"><input type="text" name="tra"></form></td>
+       <td>0,356</td>
+       <td></td>
+   </tr>
+</table>
+
+</body>
+</html>

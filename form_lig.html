@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="Acceuil.css"/>
+		<title>Maison des Ligues</title>
+	</head>	
+	<body>
+		<header>
+		<h1>
+			<img src="logo_m2l.jpg" class="logo_toutpetit" alt="logo" />
+			Maison des Ligues
+		</br></h1>
+		
+		<nav class="menu">
+  			<ul>
+  				<li class="Ligues"><a href="form_lig.html#lig"> Formulaire des </br>Ligues </a></li>
+  				<li><a href="form_prest.html#prest"> Formulaire des Prestations </a></li>
+  				<li><a href="form_fact.html#fact"> Formulaire des Factures  </a></li>
+  			</ul>
+  		</nav>
+  		</header>
+
+	<div id="bande_horizontale">
+	
+		<img src="Logo.jpg">
+	</div>
+</br></br></br></br></br></br>
+
+	<dd><h2>Nouvelle ligue</h2>
+	
+	<h3>Saisissez ces informations : </h3>
+	<form method="POST" action="insertion_ligue.php">
+		Numéro de compte : <input type="text" name="nbc"></br>
+		Nom Ligue : <input type="text" name="nl"></br>
+		Nom trésorier : <input type="text" name="nt"></br>
+		Adresse trésorier : <input type="text" name="at"></br>
+		Code Postal : <input type="text" name="cp"></br>
+		Ville : <input type="text" name="vi"></br>
+		Envoyer la facture au trésorier : </br>
+		<input type="radio" name="envoie" value="1" id="oui"/>Oui</br>
+		<input type="radio" name="envoie" value="0" id="non"/>Non</br></br>
+		<input type="submit" value="Enregistrer la ligue"></br></br></br>
+	</form>
+		<form method="POST" action="Acceuil.html#Acceuil">
+			<input type="submit" name="Ok" value="Retour à l'Acceuil" >
+			<input type="submit" name="Submit" value="Fermer l'onglet" onClick="window.close()">
+	</form>
+</body>
+</html> 

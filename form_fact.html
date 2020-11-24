@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="form_fact.css"/>
+		<title>Maison des Ligue - Ajout facture</title>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+	</head>
+	<body>
+		<div id="bande_horizontale">
+	<p>
+		<img src="Logo.jpg">
+	</p>
+	<dd><h2>Nouvelle Facture</h2>
+	
+	<h3>Saisissez ces informations : </h3>
+</br>
+	<form method="POST" action="facture.php">
+		Numéro de la facture : <input type="text" name="nbf"></br>
+		Date de facturation : <input type="text" name="df"></br>
+		Echéance : <input type="text" name="ec"></br>
+		Compte ligue : <input type="text" name="cl"></br></br>
+		<input type="submit" name="Valider" value="Valider">
+	</form></br></br>
+		<form method="POST" action="Acceuil.html#Acceuil">
+			<input type="submit" name="Ok" value="Retour à l'Acceuil" >
+			<input type="submit" name="Submit" value="Fermer l'onglet" onClick="window.close()">
+	</form>
+	</body>
+</html>
